@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio Valuta</title>
+</head>
+
+<body>
+    <form action="cambio.php" method="get">
+    <label >Importo (€):</label><br>
+    <input style="color: white; background-color: rgb(94, 94, 94);" type="number"  name="importo"><br>
+    <br>
+    <label>Valuta in arrivo:</label><br>
+    <select onchange="cambiabandiera()" style="color: white; background-color: rgb(94, 94, 94);" id="id_valuta" name="valuta">
+        <option value="1">Dollaro($)</option>
+        <option value="2">Yen(¥) </option>
+        <option value="3">Franchi Svizzeri(CHF)</option>
+        <option value="4">Sterline(£)</option>
+    </select>
+    <br>
+    <br>
+    <img id="bandiera" src="./images/us-flag.gif" width="15%">
+    <br>
+    <br>
+    <input style="color: black;" type="submit">
+    </form>
+
+<script src="./js/script.js"></script> 
+</body>
+</html>
